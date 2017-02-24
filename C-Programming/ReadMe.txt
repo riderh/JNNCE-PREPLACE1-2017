@@ -1,1 +1,0 @@
-This collection is for all the C-Programming Assignments
