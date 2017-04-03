@@ -1,19 +1,53 @@
 #include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
 
 int main()
 {
-  float voltage;
-  float resistance;
-  float current;
+char ch;
+float voltage , current , resistance , result;
 
-  printf("enter the resistance:\n");
-  scanf("%f",&resistance);
-  printf("enter the current:\n");
-  scanf("%f",&current);
+printf("select 1 to calculate the voltage\n");
+printf("select 2 to calculate the current\n");
+printf("select 3 to calculate the resistance\n");
 
-  voltage=(resistance*current);
+scanf("%c",&ch);
 
-  printf("calculated voltage is %f",voltage);
+switch(ch)
+{
+case '1' :
+printf("enter the current in amperes\n");
+scanf("%f",&current);
+printf("enter the resistance in ohms.\n");
+scanf("%f",&resistance);
+result = current*resistance;
+printf("The voltage is %f\n",result);
+break;
 
-    return 0;
+case '2' :
+printf("enter the voltage in volts\n");
+scanf("%f",&voltage);
+printf("enter the resistance in ohms\n");
+scanf("%f",&resistance);
+result = voltage / resistance;
+printf("The current is %f amperes\n",result);
+break;
+
+case '3' :
+printf("enter the voltage in volts\n");
+scanf("%f",&voltage);
+printf("enter the current in amperes\n");
+scanf("%f",&current);
+result = voltage / current;
+printf("The resistance is %f ohms\n",result);
+break;
+
+default :
+printf("not valid\n");
+break;
+
+}
+
+return 0;
+
 }
