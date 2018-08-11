@@ -1,2 +1,4 @@
 # JNNCE-PREPLACE1-2017
-Repository to collate all the assignments from students of SKILLFINITY during the Preplace program
+Repository to collt all the assignments from students of SKILLFINITY during the Preplace program
+
+and all
